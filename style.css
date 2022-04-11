@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.nav {
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid #dddcdc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+.nav-left, .nav-right, .icon{
+  display: flex;
+  align-items: center;
+}
+.icon{
+  margin: 0 20px;
+  cursor: pointer;
+}
+.icon i{
+  margin: 0 5px;
+}
+.menu {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #dddcdc;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: default;
+}
+
+.menu ul li{
+  display: inline-block;
+  margin: 0 20px;
+}
+.menu ul li:hover{
+  -webkit-box-shadow: 0px 5px 0px 0px #50a4ee;
+  -moz-box-shadow: 0px 5px 0px 0px #50a4ee;
+  box-shadow: 0px 5px 0px 0px #50a4ee;
+  cursor: pointer;
+}
+.offert{
+  height: 450px;
+  width: 100%;
+  background: #50a4ee;
+}
+section{
+  position: relative;  
+  height: 450px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #eae9e9;
+}
+.image{
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  border: 10px solid #5cb1fd;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #ffffff;
+}
+
+.swiper{
+  width: 950px;
+}
+
+.card{
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card::before{
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: #5cb1fd;
+  border-radius: 20px 20px 0 0;
+}
+
+.card .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+  z-index: 100;
+}
+.card .media-icons{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .media-icons i{
+  color: black;
+  opacity: 0.6;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card .media-icons i:hover{
+  opacity: 1;
+}
+
+.card .info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: black;
+} 
+
+.info .offert-name{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.info .about{
+  font-size:15px;
+  font-weight: 500;
+}
+
+.card .rating{
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.card .rating i{
+  font-size: 18px;
+  margin: 0 2px;
+  color: #338ddb;
+}
+
+.card .button{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card .button button{
+  background: #5cb1fd;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button button:hover{
+  background: #49a0ed;
+}
+
+.swiper-pagination{
+  position: absolute;
+}
+
+.swiper-pagination-bullet{
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #5cb1fd;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  opacity: 0.7;
+  color: #5cb1fd;
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+  opacity: 1;
+  color: #5cb1fd;
+}
+footer{
+  background-color: #50a4ee;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+}

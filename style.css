@@ -196,6 +196,10 @@ section{
   opacity: 1;
   color: #5cb1fd;
 }
+a{
+  text-decoration: none;
+  color: #000;
+}
 footer{
   background-color: #50a4ee;
   height: 50px;
